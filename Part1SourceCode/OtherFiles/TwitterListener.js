@@ -27,6 +27,6 @@ var twit = new twitter({
 
 twit.stream('statuses/filter', {track: '#oscars, #oscars2015'}, function(stream) {
     stream.on('data', function(data) {
-        console.log(util.inspect(data));
+        console.log(data);
     });
 });
